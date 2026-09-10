@@ -1,0 +1,42 @@
+Tuniverse - Installation Instructions
+=====================================
+
+1. Requirements
+---------------
+- Windows OS
+- XAMPP (Apache & MySQL)
+- PHP 8.0 or higher
+
+2. Installation Steps
+---------------------
+1. Extract or copy the entire `tuniverse` folder into your XAMPP htdocs directory:
+   `C:\xampp\htdocs\tuniverse`
+
+2. Open XAMPP Control Panel and start:
+   - Apache
+   - MySQL
+
+3. Open your browser and go to phpMyAdmin:
+   `http://localhost/phpmyadmin/`
+
+4. Import the Database:
+   - Create a new database named `tuniverse`
+   - Select the `tuniverse` database
+   - Click on the "Import" tab
+   - Choose the `database.sql` file located in the root of the project
+   - Click "Go" (or "Import") at the bottom to execute the SQL
+
+5. Configuration:
+   - The default configuration in `config/config.php` assumes `root` user with no password for MySQL.
+   - If your XAMPP MySQL has a password, edit `config/config.php` and update `DB_PASS`.
+   - `APP_URL` is configured for `http://localhost/tuniverse`.
+
+6. Run the Application:
+   - Open your browser and go to: `http://localhost/tuniverse`
+
+7. Test Accounts (After Registering):
+   - You can register a new account from the web interface.
+   - To access the Business Dashboard, manually change your `role_id` to 3 in phpMyAdmin (`users` table).
+   - To access the Admin Panel, manually change your `role_id` to 6 in phpMyAdmin (`users` table).
+
+Enjoy using Tuniverse!

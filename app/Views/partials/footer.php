@@ -1,0 +1,1 @@
+<footer class="footer"><div class="container footer-inner"><div><strong><?=e(__('app.name'))?></strong><p><?=e(__('footer.disclaimer'))?></p></div><small>© <?=date('Y')?> <?=e(__('app.name'))?> · <?=e(__('footer.rights'))?></small></div></footer>

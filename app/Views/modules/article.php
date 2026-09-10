@@ -1,0 +1,1 @@
+<article class="article"><span class="eyebrow"><?=e(__('ui.news'))?></span><h1><?=e($article['title'])?></h1><?php if($article['excerpt']):?><p class="article-lead"><?=e($article['excerpt'])?></p><?php endif;?><div class="article-content"><?=nl2br(e($article['content']))?></div></article>
